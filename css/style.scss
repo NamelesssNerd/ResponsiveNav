@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 100%;
+    background-color: #BCECE0;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    .logo {
+        overflow: hidden;
+        width: 15%;
+        color: rgb(11, 0, 0);
+        padding-left: 2%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #middle {
+        padding-left: 15%;
+        overflow: hidden;
+        width: 80%;
+        ul {
+            display: flex;
+
+            li {
+                transition: all .8s;
+                margin-left: 10%;
+                text-transform: uppercase;
+                font-size: 15px;
+                color: rgb(0, 0, 0);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                list-style: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    #Toggle-Button {
+        display: none;
+        font-size: 25px;
+        width: 10%;
+        float: right;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        #Toggle-Button1{
+            display: none;
+        }
+        #Toggle-Button2{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+        .logo {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        .logo {
+            width: 30%;
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+        #middle {
+            transition: all .8s;
+            display: none;
+            background-color: #BCECE0;
+            position: absolute;
+            margin-top: -30rem;
+            height: 100vh;
+            width: 100%;
+
+            ul {
+                position: absolute;
+                margin-left: -14%;
+                height: 70vh;
+                width: 100%;
+                display: block;
+                padding-left: 30%;
+                justify-content: center;
+
+                li {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 1.5rem;
+                    margin-top: 1.5rem;
+                    cursor: pointer;
+                    color: #000f0b;
+                }
+            }
+        }
+
+        #Toggle-Button {
+            cursor: pointer;
+            margin-left: 60%;
+            display: block;
+            #Toggle-Button1{
+                display: block;
+            }
+            #Toggle-Button2{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .nav {
+        .logo {
+            width: 30%;
+
+            h2 {
+                font-size: 14px;
+            }
+        }
+        #middle {
+            transition: all 1s;
+            display: none;
+            background-color: #BCECE0;
+            position: absolute;
+            margin-top: 20rem;
+            height: 70vh;
+            width: 100%;
+
+            ul {
+                position: absolute;
+                margin-left: -14%;
+                height: 70vh;
+                width: 100%;
+                display: block;
+                padding-left: 30%;
+                justify-content: center;
+
+                li {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 1.5rem;
+                    margin-top: 1.5rem;
+                    cursor: pointer;
+                    color: #000f0b;
+                }
+            }
+        }
+
+        #Toggle-Button {
+            cursor: pointer;
+            margin-left: 60%;
+            display: block;
+        }
+    }
+}
